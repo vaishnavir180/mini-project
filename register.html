@@ -18,7 +18,8 @@
         <div class="row vh-100 ">
             <div class="col-lg-6 bg-gray p-5 text-center">
                 <h4 class="text-center fw-bolder fs-2">Login</h4>
-                <p class="mb-3 fs-7">Already have an account ?Sign in</p>
+                <p class="mb-3 fs-7">Already have an accoun?<a href="login.html">Sign in</a></p>
+                </p>
                 <a href="login.html"><button class="btn fw-bold mb-5 btn-outline-success px-4 rounded-pill">log In</button></a>
                 <div class="img-cover p-4">
                     <img src="assets/images/2.png" alt="">
@@ -30,7 +31,7 @@
                         <h4 class="text-center fw-bolder mb-4 fs-2">Register</h4>
                         <div class="input-group mb-4">
                             <span class="input-group-text border-end-0 inbg" id="basic-addon1"><i class="bi bi-person"></i></span>
-                            <select class="form-control ps-2 border-start-0 fs-7 inbg form-control-lg mb-0">
+                            <select class="form-control ps-2 border-start-0 fs-7 inbg form-control-lg mb-0" id="role">
                                 <option value="Python">select</option>
                                 <option value="Admin">Admin</option>
                                 <option value="Faculty">Faculty</option>
@@ -39,44 +40,48 @@
                         </div>
                         <div class="input-group mb-4">
                             <span class="input-group-text border-end-0 inbg" id="basic-addon1"><i class="bi bi-person"></i></span>
-                            <input type="text" class="form-control ps-2 border-start-0 fs-7 inbg form-control-lg mb-0" placeholder="Enter Full Name" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control ps-2 border-start-0 fs-7 inbg form-control-lg mb-0" placeholder="Enter Full Name" id="fullname" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-4">
                             <span class="input-group-text border-end-0 inbg" id="basic-addon1"><i class="bi bi-envelope"></i></span>
-                            <input type="text" class="form-control ps-2 border-start-0 fs-7 inbg form-control-lg mb-0" placeholder="Enter Email Address" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control ps-2 border-start-0 fs-7 inbg form-control-lg mb-0" placeholder="Enter Email Address" id="email" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-4">
                             <span class="input-group-text border-end-0 inbg" id="basic-addon1"><i class="bi bi-lock"></i></span>
-                            <input type="password" class="form-control ps-2 fs-7 border-start-0 form-control-lg inbg mb-0" placeholder="Enter Password" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="password" class="form-control ps-2 fs-7 border-start-0 form-control-lg inbg mb-0" placeholder="Enter Password" id="password" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
+
                         <div class="input-group mb-4">
                             <span class="input-group-text border-end-0 inbg" id="basic-addon1"><i class="bi bi-lock"></i></span>
-                            <input type="password" class="form-control ps-2 fs-7 border-start-0 form-control-lg inbg mb-0" placeholder="Confirm Password" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="password" class="form-control ps-2 fs-7 border-start-0 form-control-lg inbg mb-0" placeholder="Enter confirm password" id="confirmpassword " aria-label="Username" aria-describedby="basic-addon1">
                         </div>
 
-                        <a href="login.html" class="btn btn-lg fw-bold fs-7 btn-success  w-100" href="">Register</a>
-
-                        <p class="text-center py-4 fw-bold fs-8">Already have an account ?Sign in</p>
+                        <button class="btn btn-lg fw-bold fs-7 btn-success  w-100" id="register-button">Register</button>
+                        <p class="text-center py-4 fw-bold fs-8">Already have an account?<a href="login.html">Sign in</a></p>
 
                         <ul class="d-inline-block mx-auto">
                             <li class="float-start px-3"><a href=""><i class="bi bi-facebook"></i></a></li>
                             <li class="float-start px-3"><a href=""><i class="bi bi-twitter"></i></a></li>
                             <li class="float-start px-3"><a href=""><i class="bi bi-linkedin"></i></a></li>
                             <li class="float-start px-3"><a href=""><i class="bi bi-google"></i></a></li>
-
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </body>
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+<script type="module" src="register.js"></script>
+<script type="module" src="firebase-auth.js"></script>
 <script src="assets/js/jquery-3.2.1.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
 <script src="assets/plugins/testimonial/js/owl.carousel.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="script.js"></script>
 
 </html>
